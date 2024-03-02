@@ -1,1 +1,5 @@
-# DataHouse_exercise
+This program takes in an input of JSON data with names and a list of attributes. The attributes being analyzed are intelligence, strength, endurance, and spicyFoodTolerance. The goal is to find out how compatible applicants to a certain company are to current team members of that company. The initial data given are the names and attributes of 3 team members and 3 applicants. The compatibility scores were calculated using the Euclidean distance formula, treating the list of attribute values as a vector. The calculation is (1 - (min_score/max_score)) in order to set 1 as the best value (most compatible), and 0 as the worst value (least compatible).  
+
+Additionally, I created two more functions which calculated individual compatibility scores between each team member and each applicant. I put those scores into a pandas DataFrame, and created a visualization showing how compatible each applicant is with each team member. 
+
+The final output is JSON data with names and compatibility scores for the whole team, plus the visualization of individuals. 
